@@ -28,7 +28,7 @@ CREATE TABLE productos (
     id_categoria INT,
     precio DECIMAL(10,2) NOT NULL,
     stock INT DEFAULT 0,
-    activo TINYINT(1) DEFAULT 1,
+    activo TINYINT DEFAULT 1,
     FOREIGN KEY (id_categoria) REFERENCES categorias(id_categoria)
 );
 
@@ -54,6 +54,8 @@ INSERT INTO clientes VALUES (2, 'Carlos Ruiz', 'carlos@mail.com', 'Córdoba', '2
 INSERT INTO clientes VALUES (3, 'Ana Gómez', 'ana@mail.com', 'Rosario', '2024-02-01');
 INSERT INTO clientes VALUES (4, 'Pedro Sanz', 'pedro@mail.com', 'Mendoza', '2024-02-15');
 INSERT INTO clientes VALUES (5, 'Laura Torres', 'laura@mail.com', 'Tucumán', '2024-03-01');
+INSERT INTO clientes VALUES (6, 'Sofía Martínez', 'sofia.martinez@email.com', 'Mendoza', '2024-06-01');
+INSERT INTO clientes VALUES (7, 'Tatiana Díaz', 'tatianaacre1@email.com', 'Córdoba', '2024-12-19');
 
 INSERT INTO productos VALUES (1, 'Laptop Pro 15', 1, 1200.00, 15, 1);
 INSERT INTO productos VALUES (2, 'Mouse Inalámbrico', 2, 28.00, 80, 1);
@@ -61,6 +63,7 @@ INSERT INTO productos VALUES (3, 'Monitor 4K 27"', 1, 450.00, 12, 1);
 INSERT INTO productos VALUES (4, 'Auriculares BT Pro', 3, 120.00, 35, 1);
 INSERT INTO productos VALUES (5, 'SSD Externo 1TB', 4, 130.00, 18, 1);
 INSERT INTO productos VALUES (6, 'Teclado Mecánico', 2, 95.00, 40, 1);
+INSERT INTO productos VALUES (7, 'Webcam HD', 1, 45.00, 10, 1);
 
 INSERT INTO ventas VALUES (1, 1, 1, 2, 1200.00, '2024-03-05');
 INSERT INTO ventas VALUES (2, 2, 2, 5, 28.00, '2024-03-06');
